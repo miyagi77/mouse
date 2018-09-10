@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="获取鼠标点">
+<title>获取鼠标点</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+    onload = function ()
+    {
+        var div = document.getElementById ('div')
+        document.onmousemove = function (e)
+        {
+            e = e || window.event;
+            div.innerHTML = (e.clientX + ',' + e.clientY);
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="div"></div>
+</body>
+</html>
